@@ -7,17 +7,15 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <include src="./views/header.html" locals='{
-      "page": "home"
-    }'></include>
+  <body class="flex flex-col min-h-screen bg-background">
+    <include src="./views/header.html"></include>
 
-    <main class="p-6 text-center">
+    <main class="grow p-6 text-center">
       <p class="text-2xl font-semibold text-pink-800">PEC 3: La Cocina Pacense</p>
     </main>
 
     <include src="./views/footer.html"></include>
-    
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
