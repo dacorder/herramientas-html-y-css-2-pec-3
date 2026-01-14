@@ -16,7 +16,7 @@
     <main class="grow p-6 text-center">
       <h1 class="text-4xl">Ponentes</h1>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         <include src="./views/speaker-card.html" locals='{
             "image": "assets/images/davidm.jpg",
             "name": "David Muñoz",
@@ -53,6 +53,11 @@
           "description": "Renombrado chef de sushi japonés, propietario del restaurante Sukiyabashi Jiro, galardonado con tres estrellas Michelin."
         }'></include>
       </div>
+
+      <footer class="mt-15 mb-5">
+        Si quieres participar como ponente, envíanos un correo a:
+        <a class="text-info" href="mailto: info@cocinapacense.com">info@cocinapacense.com</a>
+      </footer>
     </main>
 
     <include src="./views/footer.html"></include>
