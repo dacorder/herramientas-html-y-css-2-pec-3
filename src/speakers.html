@@ -14,7 +14,45 @@
     }'></include>
 
     <main class="grow p-6 text-center">
-      SPEAKERS
+      <h1 class="text-4xl">Ponentes</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <include src="./views/speaker-card.html" locals='{
+            "image": "assets/images/davidm.jpg",
+            "name": "David Muñoz",
+            "description": "Cocinero español conocido por su restaurante DiverXO, galardonado con tres estrellas Michelin."
+          }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "assets/images/ferrana.jpg",
+          "name": "Ferran Adrià",
+          "description": "Autor de la revolución culinaria en el restaurante El Bulli, conocido por su enfoque innovador y creativo en la gastronomía."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "assets/images/martinb.jpg",
+          "name": "Martín Berasategui",
+          "description": "Chef español con múltiples estrellas Michelin, reconocido por su cocina vasca contemporánea."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "assets/images/jamieo.jpg",
+          "name": "Jamie Oliver",
+          "description": "Chef británico conocido por su enfoque en la comida saludable y su labor educativa en la cocina."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "assets/images/gordonr.jpg",
+          "name": "Gordon Ramsay",
+          "description": "Chef escocés famoso por su temperamento y sus programas de televisión, así como por sus restaurantes con estrellas Michelin."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "assets/images/jiroo.jpg",
+          "name": "Jiro Ono",
+          "description": "Renombrado chef de sushi japonés, propietario del restaurante Sukiyabashi Jiro, galardonado con tres estrellas Michelin."
+        }'></include>
+      </div>
     </main>
 
     <include src="./views/footer.html"></include>
