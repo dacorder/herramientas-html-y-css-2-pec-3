@@ -4,7 +4,11 @@
     <span class="text-white text-xl">Cocina Pacense</span> 
   </a>
 
-  <nav>
+  <button id="menu-toggle" class="md:hidden text-white text-2xl" aria-label="Toggle menu" aria-expanded="false">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <nav class="hidden md:block">
     <ul class="flex flex-row gap-4">
       <li class="{{ page === 'home' ? 'border-b-3 border-white pb-1' : '' }}">
         <a href="index.html">
