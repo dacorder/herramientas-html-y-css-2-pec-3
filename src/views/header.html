@@ -3,25 +3,25 @@
 
   <nav>
     <ul class="flex flex-row gap-4">
-      <li class="border-b-3 border-white pb-1">
+      <li class="{{ page === 'home' ? 'border-b-3 border-white pb-1' : '' }}">
         <a href="index.html">
           <i aria-hidden="true" class="fas fa-home"></i>
           Inicio
         </a>
       </li>
-      <li>
+      <li class="{{ page === 'speakers' ? 'border-b-3 border-white pb-1' : '' }}">
         <a href="speakers.html">
           <i aria-hidden="true" class="fas fa-microphone"></i>
           Ponentes
         </a>
       </li>
-      <li>
+      <li class="{{ page === 'media' ? 'border-b-3 border-white pb-1' : '' }}">
         <a  href="media.html">
           <i aria-hidden="true" class="fas fa-newspaper"></i>
           Nota de Prensa
         </a>
       </li>
-      <li>
+      <li class="{{ page === 'contact' ? 'border-b-3 border-white pb-1' : '' }}">
         <a href="contact.html">
           <i aria-hidden="true" class="fas fa-address-book"></i>
           Contacto

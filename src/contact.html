@@ -8,7 +8,10 @@
     <title>UOC Boilerplate</title>
   </head>
   <body class="flex flex-col min-h-screen bg-background">
-    <include src="./views/header.html"></include>
+
+    <include src="./views/header.html"locals='{
+      "page": "contact"
+    }'></include>
 
     <main class="grow p-6 text-center">
       CONTACT
