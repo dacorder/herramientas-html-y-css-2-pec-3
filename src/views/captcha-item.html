@@ -1,2 +1,4 @@
-<input class="hidden" type="radio" id="color-{{color}}" name="captcha">
-<label class="block {{color}} w-9 h-9 rounded-full border border-secondary cursor-pointer hover:scale-110 transition" for="color-{{color}}" title="{{name}}"></label>
+<div>
+    <input class="peer hidden" type="radio" id="color-{{name}}" name="captcha">
+    <label class="block {{color}} w-9 h-9 rounded-full border border-secondary cursor-pointer hover:scale-110 transition peer-checked:shadow-[0_0_0_3px_var(--color-primary)]" for="color-{{name}}" title="{{name}}"></label>
+</div>

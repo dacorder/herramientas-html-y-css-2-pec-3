@@ -16,7 +16,7 @@
     <main class="grow px-1 text-center max-w-2xl mx-auto">
       <h1 class="text-4xl m-6">Contacto</h1>
 
-      <form class="flex flex-col items-center border border-secondary rounded-md shadow-md bg-background px-6 py-2 mb-20" name="contact" method="POST" netlify>
+      <form class="group flex flex-col items-center border border-secondary rounded-md shadow-md bg-background px-6 py-2 mb-20" name="contact" method="POST" netlify>
         <i class="fa-solid fa-envelope py-5 text-5xl text-info"></i>
         <p class="mb-6">
           Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros rellenando el siguiente formulario:
@@ -41,16 +41,16 @@
           <label>¿Eres humano? Selecciona el color azul para confirmar</label>
 
           <div class="grid grid-cols-3 md:grid-cols-6 justify-items-center text-center gap-3 mt-2">
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-red-500", "name": "Rojo" }'></include>
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-blue-500", "name": "Azul" }'></include>
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-green-500", "name": "Verde" }'></include>
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-yellow-500", "name": "Amarillo" }'></include>
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-purple-500", "name": "Morado" }'></include>
-            <include src="./views/captcha-item.html" locals='{ "color": "bg-orange-500", "name": "Naranja" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-red-500", "name": "red" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-blue-500", "name": "blue" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-green-500", "name": "green" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-yellow-500", "name": "yellow" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-purple-500", "name": "purple" }'></include>
+            <include src="./views/captcha-item.html" locals='{ "color": "bg-orange-500", "name": "orange" }'></include>
           </div>
         </div>
 
-        <button class="bg-primary text-primary-contrast py-2 px-10 rounded-lg m-6" type="submit">Enviar</button>
+        <button class="bg-primary text-primary-contrast py-2 px-10 rounded-lg m-6 opacity-50 pointer-events-none group-has-[#color-blue:checked]:opacity-100 group-has-[#color-blue:checked]:pointer-events-auto" type="submit">Enviar</button>
       </form>
     </main>
 
