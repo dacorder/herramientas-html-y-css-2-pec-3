@@ -1,0 +1,7 @@
+.form-entry {
+    @apply flex flex-col text-start mb-2 mt-3 w-full;
+}
+
+.input-field {
+    @apply bg-white border border-secondary py-3 px-2 rounded-md;
+}
